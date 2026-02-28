@@ -1,0 +1,14 @@
+# CodeFlow 依赖
+
+# Web 框架
+streamlit
+fastapi
+uvicorn
+
+# HTTP 客户端
+aiohttp
+requests
+
+# 模板引擎
+jinja2
+pyyaml

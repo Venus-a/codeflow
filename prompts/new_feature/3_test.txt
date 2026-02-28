@@ -1,0 +1,23 @@
+# step 3: 测试大纲 (Test Plan)
+
+## Context
+读取并理解以下文件：
+- `<PROJECT_PATH>/docs/PRD.md` - 需求文档（含验收标准）
+- `<PROJECT_PATH>/docs/TP.md` - 技术方案（含接口定义）
+
+## Work path
+<PROJECT_PATH>/docs
+
+## Task
+制定测试策略，映射每一个功能点到具体的测试用例。
+
+## Output Standard (`TEST_PLAN.md`)
+1. **结构**：
+   - 1. 测试策略 (单元/集成/E2E 比例)
+   - 2. 用例清单 (表格：ID | 关联需求 | 测试场景 | 预期结果 | 优先级)
+   - 3. Mock 策略 (哪些外部依赖需要 Mock)
+2. **风格**：表格为主。预期结果必须具体（如：返回 401 错误，而非"报错"）。
+3. **简洁**：只列关键路径和异常路径，省略微而言之的内容。
+
+## Action
+生成 `TEST_PLAN.md`。此文档将直接指导测试代码编写。

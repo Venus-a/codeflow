@@ -1,0 +1,24 @@
+# step 2: 方案构建 (Technical Plan)
+
+## Context
+读取并理解以下文件：
+- `<PROJECT_PATH>/docs/PRD.md` - 正式需求文档
+
+## Work path
+<PROJECT_PATH>/docs
+
+## Task
+设计实现方案，重点在于数据结构、接口定义和核心算法选型。
+
+## Output Standard (`TP.md`)
+1. **结构**：
+   - 1. 技术栈 (语言/框架/版本)
+   - 2. 目录结构 (Tree 格式)
+   - 3. 数据模型 (Schema 定义或 Interface 定义)
+   - 4. 核心 API 设计 (Method | Path | Request | Response)
+   - 5. 关键难点解决方案
+2. **风格**：多用代码块定义 Interface/Schema，少用文字描述。
+3. **约束**：不包含具体业务逻辑实现代码，只定义契约。
+
+## Action
+生成 `TP.md`。如有技术选型风险，请在此阶段提出。

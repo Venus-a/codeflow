@@ -1,0 +1,25 @@
+# step 4: 测试代码开发 (TDD Red Phase)
+
+## Context
+读取并理解以下文件：
+- `<PROJECT_PATH>/docs/TEST_PLAN.md` - 测试大纲
+- `<PROJECT_PATH>/docs/TP.md` - 技术方案（含接口定义）
+
+**注意：此时不要编写任何业务逻辑实现代码！**
+
+## Work path
+<PROJECT_PATH>/docs
+<PROJECT_PATH>/test
+
+## Task
+1. **编写测试**：根据测试大纲，编写测试用例文件。
+2. **定义接口桩**：如果业务代码不存在，先定义空函数/类，确保测试能运行但会失败。
+3. **验证失败**：提供运行命令，确保测试结果是 **FAIL** (红条)。
+
+## Output Standard
+1. **代码规范**：测试代码需包含清晰的 Arrange-Act-Assert 结构。
+2. **脚本**：提供 `run_tests.sh` 或 equivalent 命令。
+3. **注释**：在测试函数名中体现测试场景 (如 `test_login_should_fail_with_wrong_password`)。
+
+## Action
+输出测试代码。指导我运行并确认测试失败。

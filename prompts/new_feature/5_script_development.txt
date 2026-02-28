@@ -1,0 +1,25 @@
+# step 5: 工程代码开发 (TDD Green & Refactor)
+
+## Context
+读取并理解以下文件：
+- `<PROJECT_PATH>/test` - 测试代码（已就绪且处于失败状态）
+- `<PROJECT_PATH>/docs/TP.md` - 技术方案
+
+## Work path
+<PROJECT_PATH>/docs
+<PROJECT_PATH>/test
+<PROJECT_PATH>/src
+
+## Task
+1. **实现逻辑**：编写业务代码，目标仅是让测试通过 (Green)。
+2. **最小化**：不要过度设计，只实现当前测试需要的功能。
+3. **重构**：测试通过后，优化代码结构，消除重复，确保可读性。
+4. **验证通过**：确保所有测试用例 **PASS** (绿条)。
+
+## Output Standard
+1. **代码规范**：遵循 SOLID 原则，类型提示完整。
+2. **注释**：只注释"为什么这么做"，不要注释"做了什么"。
+3. **更新 TP.md**：如果实现过程中修改了技术方案，请同步更新 `TP.md`。
+
+## Action
+输出工程代码文件内容。指导我运行测试并确认全部通过。
