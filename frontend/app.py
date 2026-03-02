@@ -86,7 +86,8 @@ def check_opencode():
             ["opencode", "--version"],
             capture_output=True,
             text=True,
-            timeout=5
+            timeout=5,
+            shell=True  # Windows 需要 shell=True 来执行 .cmd 文件
         )
         return result.returncode == 0
     except:

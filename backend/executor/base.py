@@ -159,12 +159,13 @@ class OpenCodeExecutor(Executor):
         start_time = datetime.now()
 
         try:
-            # 构建命令
-            cmd = [self.opencode_path, "chat", prompt]
+            # 构建命令 - Windows 需要 shell=True 来执行 .cmd 文件
+            cmd = f"{self.opencode_path} chat {prompt}"
+            shell = True if sys.platform == "win32" else False
 
             # 执行命令
-            process = await asyncio.create_subprocess_exec(
-                *cmd,
+            process = await asyncio.create_subprocess_shell(
+                cmd,
                 stdout=asyncio.subprocess.PIPE,
                 stderr=asyncio.subprocess.PIPE,
                 cwd=context.get("project_path", ".") if context else "."
