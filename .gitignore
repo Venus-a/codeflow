@@ -39,6 +39,7 @@ ENV/
 # Data
 data/sessions/*.json
 !data/sessions/.gitkeep
+data/workspace/*
 
 # Streamlit
 .streamlit/
